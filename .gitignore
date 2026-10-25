@@ -1,0 +1,30 @@
+# Dependencies
+node_modules/
+
+# Next.js build output
+.next/
+out/
+
+# Production logs
+*.log
+logs/
+
+# Local environment files
+.env
+.env.*
+!.env.example
+
+# TypeScript build info
+*.tsbuildinfo
+
+# Coverage and test output
+coverage/
+
+# Tooling and editor files
+.DS_Store
+.idea/
+.vscode/*
+!.vscode/settings.json
+
+# Vercel
+.vercel/
