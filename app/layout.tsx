@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Lora, Roboto } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 
 const roboto = Roboto({
@@ -28,7 +29,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${roboto.variable} ${lora.variable}`}>{children}</body>
+      <body className={`${roboto.variable} ${lora.variable}`}>
+        {children}
+        <Analytics />
+      </body>
     </html>
   );
 }

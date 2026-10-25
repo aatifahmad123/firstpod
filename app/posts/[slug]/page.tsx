@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 import { posts } from "../../posts";
 import Newsletter from "../../components/newsletter";
+import SiteNav from "../../components/site-nav";
 
 function ArrowIcon() {
   return (
@@ -29,25 +30,7 @@ export default async function PostPage({
 
   return (
     <main>
-      <nav className="site-nav">
-        <a className="brand" href="/">
-          <span className="brand-mark">F</span>
-          <span>FIRSTPOD</span>
-        </a>
-        <div className="nav-actions">
-          <div className="nav-links">
-            <a href={`/posts/${posts[0].slug}`}>Latest</a>
-            <a href="/archive">Archive</a>
-            <a href="/#about">Contact</a>
-          </div>
-          <a className="subscribe-link" href="/#subscribe">
-            Subscribe
-          </a>
-        </div>
-        <button className="menu-button" aria-label="Open menu">
-          <span aria-hidden="true">☰</span>
-        </button>
-      </nav>
+      <SiteNav latestHref={`/posts/${posts[0].slug}`} contactHref="/#about" subscribeHref="/#subscribe" />
 
       <article className="post-page">
         <header className="post-page-header">

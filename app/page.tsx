@@ -1,5 +1,6 @@
 import { posts } from "./posts";
 import Newsletter from "./components/newsletter";
+import SiteNav from "./components/site-nav";
 
 function ArrowIcon() {
   return (
@@ -9,38 +10,12 @@ function ArrowIcon() {
   );
 }
 
-function MenuIcon() {
-  return (
-    <svg aria-hidden="true" viewBox="0 0 24 24">
-      <path d="M4 7h16M4 12h16M4 17h16" />
-    </svg>
-  );
-}
-
 export default function Home() {
   const [latest, ...recentPosts] = posts;
 
   return (
     <main>
-      <nav className="site-nav">
-        <a className="brand" href="/">
-          <span className="brand-mark">F</span>
-          <span>FIRSTPOD</span>
-        </a>
-        <div className="nav-actions">
-          <div className="nav-links">
-            <a href={`/posts/${latest.slug}`}>Latest</a>
-            <a href="/archive">Archive</a>
-            <a href="#about">Contact</a>
-          </div>
-          <a className="subscribe-link" href="#subscribe">
-            Subscribe
-          </a>
-        </div>
-        <button className="menu-button" aria-label="Open menu">
-          <MenuIcon />
-        </button>
-      </nav>
+      <SiteNav latestHref={`/posts/${latest.slug}`} contactHref="#about" subscribeHref="#subscribe" />
 
       <section className="intro" id="latest">
         <h1>

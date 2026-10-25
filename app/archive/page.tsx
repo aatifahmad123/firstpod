@@ -1,4 +1,5 @@
 import { posts } from "../posts";
+import SiteNav from "../components/site-nav";
 
 function ArrowIcon() {
   return (
@@ -8,34 +9,10 @@ function ArrowIcon() {
   );
 }
 
-function Header() {
-  return (
-    <nav className="site-nav">
-      <a className="brand" href="/">
-        <span className="brand-mark">F</span>
-        <span>FIRSTPOD</span>
-      </a>
-      <div className="nav-actions">
-        <div className="nav-links">
-          <a href={`/posts/${posts[0].slug}`}>Latest</a>
-          <a href="/archive">Archive</a>
-          <a href="/#about">Contact</a>
-        </div>
-        <a className="subscribe-link" href="/#subscribe">
-          Subscribe
-        </a>
-      </div>
-      <button className="menu-button" aria-label="Open menu">
-        <span aria-hidden="true">☰</span>
-      </button>
-    </nav>
-  );
-}
-
 export default function ArchivePage() {
   return (
     <main>
-      <Header />
+      <SiteNav latestHref={`/posts/${posts[0].slug}`} contactHref="/#about" subscribeHref="/#subscribe" />
       <section className="archive-page">
         <div className="archive-heading">
           <h1>All posts</h1>
