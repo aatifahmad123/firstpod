@@ -12,7 +12,7 @@ function ArrowIcon() {
 export default function ArchivePage() {
   return (
     <main>
-      <SiteNav latestHref={`/posts/${posts[0].slug}`} contactHref="/#about" subscribeHref="/#subscribe" />
+      <SiteNav latestHref={`/posts/${posts[0].slug}`} contactHref="/#about" />
       <section className="archive-page">
         <div className="archive-heading">
           <h1>All posts</h1>

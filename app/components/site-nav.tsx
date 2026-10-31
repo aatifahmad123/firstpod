@@ -5,7 +5,6 @@ import { useState } from "react";
 type SiteNavProps = {
   latestHref: string;
   contactHref: string;
-  subscribeHref: string;
 };
 
 function MenuIcon() {
@@ -19,7 +18,6 @@ function MenuIcon() {
 export default function SiteNav({
   latestHref,
   contactHref,
-  subscribeHref,
 }: SiteNavProps) {
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -35,9 +33,6 @@ export default function SiteNav({
           <a href="/archive">Archive</a>
           <a href={contactHref}>Contact</a>
         </div>
-        <a className="subscribe-link" href={subscribeHref}>
-          Subscribe
-        </a>
       </div>
       <button
         className="menu-button"
@@ -53,7 +48,6 @@ export default function SiteNav({
           <a href={latestHref} onClick={() => setMenuOpen(false)}>Latest</a>
           <a href="/archive" onClick={() => setMenuOpen(false)}>Archive</a>
           <a href={contactHref} onClick={() => setMenuOpen(false)}>Contact</a>
-          <a href={subscribeHref} onClick={() => setMenuOpen(false)}>Subscribe</a>
         </div>
       )}
     </nav>

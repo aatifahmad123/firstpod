@@ -16,7 +16,7 @@ export default function Home() {
 
   return (
     <main>
-      <SiteNav latestHref={`/posts/${latest.slug}`} contactHref="#about" subscribeHref="#subscribe" />
+      <SiteNav latestHref={`/posts/${latest.slug}`} contactHref="#about" />
 
       <section className="intro" id="latest">
         <h1>

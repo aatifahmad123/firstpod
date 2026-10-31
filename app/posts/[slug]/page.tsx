@@ -30,7 +30,7 @@ export default async function PostPage({
 
   return (
     <main>
-      <SiteNav latestHref={`/posts/${posts[0].slug}`} contactHref="/#about" subscribeHref="/#subscribe" />
+      <SiteNav latestHref={`/posts/${posts[0].slug}`} contactHref="/#about" />
 
       <article className="post-page">
         <header className="post-page-header">

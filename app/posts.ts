@@ -35,23 +35,6 @@ export const posts: Post[] = [
     ],
   },
   {
-    slug: "recent-cybersecurity-threats-in-the-age-of-ai",
-    title: "Recent cybersecurity threats in the age of AI",
-    excerpt:
-      "AI is making attacks faster, more convincing, and easier to scale. Here is how teams can prepare for the threats already arriving.",
-    date: "Oct 25, 2026",
-    readTime: "9 min read",
-    accent: "orange",
-    fontColor: "cream",
-    content: [
-      "The latest wave of cybersecurity threats is not defined by one breakthrough exploit. It is defined by acceleration: AI helps attackers research targets, write convincing messages, adapt malware, and iterate at a speed that traditional defenses were not designed to match.",
-      "Phishing is becoming more personal. Public profiles, breached data, and company documentation give language models enough context to produce messages that sound like a trusted colleague. The familiar signs of poor grammar and strange wording are disappearing, so identity and payment requests need verification outside the message itself.",
-      "Attackers are also using AI to explore exposed systems and generate variations of malicious code. This does not make every attack autonomous, but it lowers the cost of experimentation. Smaller groups can now attempt more campaigns, test more lures, and respond quickly when a defense blocks them.",
-      "Defenders can use the same shift to their advantage, but only when AI is connected to strong fundamentals. Keep software and dependencies patched, reduce unnecessary access, require phishing-resistant multi-factor authentication, and log the actions that matter most. Automation should shorten the path from an unusual signal to a human decision.",
-      "The most resilient teams treat AI security as an operating practice rather than a one-time project. Review where sensitive data flows, rehearse account-compromise scenarios, and teach people how to challenge urgent requests. The goal is not to predict every new tool an attacker may use. It is to make the organization difficult to surprise and quick to recover.",
-    ],
-  },
-  {
     slug: "shipping-software-without-losing-the-thread",
     title: "Shipping software without losing the thread",
     excerpt:
