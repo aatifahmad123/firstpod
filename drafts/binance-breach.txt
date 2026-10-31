@@ -1,0 +1,160 @@
+# The $6.3 Billion Binance Heist: How Hackers Pulled Off One of Crypto's Biggest Thefts
+
+*An inside look at the security breach, the technology exploited, where the stolen money went, and what it means for cryptocurrency security.*
+
+**Date:** 31 October 2026  
+**Reading time:** 5 minutes
+
+## 1. What Happened?
+
+On 29 October 2026, Binance, the world's largest cryptocurrency exchange, suffered a major security breach that resulted in approximately **$6.36 billion in cryptocurrency being stolen**.
+
+According to blockchain intelligence firm TRM Labs, the attackers moved funds across ten blockchain networks, with most of the theft occurring within approximately 20 minutes.
+
+For perspective, the infamous Bybit hack in February 2025 involved approximately $1.5 billion. The Binance incident is more than four times larger.
+
+However, this wasn't a conventional scam involving fake websites or stolen customer passwords. It appears to have been a sophisticated attack on the infrastructure responsible for authorizing cryptocurrency transactions.
+
+## 2. How Did the Attack Work?
+
+Cryptocurrency exchanges generally maintain two types of wallets:
+
+- **Cold wallets:** Kept offline or isolated from operational systems for long-term storage.
+- **Hot wallets:** Connected to operational infrastructure and used for everyday deposits and withdrawals.
+
+Hot wallets require private keys to authorize transactions. These keys are typically protected using specialized signing infrastructure.
+
+Initial investigations suggested that attackers compromised a laptop belonging to a Binance DevOps engineer and subsequently gained access to internal infrastructure. Binance later indicated that the attack involved multiple breach points.
+
+The most important part of the attack was reportedly the compromise of systems responsible for transaction authorization.
+
+Here's why that matters.
+
+Imagine a bank vault with an extremely secure lock. Instead of breaking the lock, an attacker compromises the control room that authorizes access to the vault.
+
+The attacker may never need to physically steal the key.
+
+A similar principle applies to cryptocurrency signing systems. If an attacker compromises a service authorized to request cryptographic signatures, they may be able to initiate unauthorized transactions without directly extracting the underlying private keys.
+
+### The Ethereum EIP-7702 connection
+
+One particularly interesting technical detail identified by TRM Labs involved Ethereum's EIP-7702 functionality.
+
+EIP-7702 allows externally owned accounts (EOAs) to delegate certain functionality to smart-contract code.
+
+Investigators reported that attackers abused this mechanism to turn a Binance hot wallet into an attacker-controlled sweeper.
+
+A sweeper automatically transfers funds from one wallet to another.
+
+The attackers reportedly prepared 50 pre-signed authorizations in advance, suggesting considerable planning before the actual theft.
+
+Importantly, Binance stated that investigators had found no evidence of wallet private keys being leaked.
+
+Sources: [TRM Labs](https://www.trmlabs.com/resources/blog/north-korea-steals-usd-6-36-billion-from-binance-in-the-largest-hack-in-history) · [The Block](https://www.theblock.co/news/business/2026-10-30-binance-hack-largest-crypto-hack-north-korea-432225)
+
+## 3. Where Did the $6.36 Billion Go?
+
+Stealing cryptocurrency is only half the challenge. Converting it into usable money without getting caught is considerably harder.
+
+Blockchain transactions are publicly visible, allowing investigators to track stolen funds across wallets and networks.
+
+A significant portion of the stolen assets consisted of stablecoins such as USDT and USDC.
+
+Unlike Bitcoin and Ethereum, stablecoins issued by centralized companies have an important feature: their issuers can freeze tokens at specific addresses.
+
+Following the incident, companies including Tether, Circle and Ripple cooperated with investigators to restrict affected assets.
+
+Approximately **$3 billion worth of assets were reportedly frozen or immobilized**.
+
+The attackers also attempted to convert stablecoins into ETH.
+
+One reported transaction involved converting approximately $325 million in stablecoins into around $285 million worth of ETH.
+
+Why would attackers willingly lose $40 million?
+
+Because ETH cannot be directly frozen by a centralized token issuer. An attacker might prefer $285 million in an asset they can control over $325 million that could be frozen.
+
+This demonstrates an important distinction in cryptocurrency: the value of an asset and the ability to control that asset are not necessarily the same thing.
+
+## 4. Who Was Behind the Attack?
+
+Blockchain intelligence firm TRM Labs attributed the incident to TraderTraitor, a hacking group associated with North Korea.
+
+Other investigations have also identified similarities with previous North Korean-linked cryptocurrency thefts.
+
+North Korean hacking groups have been associated with several major attacks, including the $1.5 billion Bybit theft in February 2025.
+
+Their techniques have included:
+
+- Compromising employee devices.
+- Social engineering.
+- Exploiting internal infrastructure.
+- Targeting transaction-signing systems.
+- Moving stolen funds across multiple blockchain networks.
+
+However, attribution by blockchain intelligence firms is not the same as an official confirmation of responsibility. Binance has not publicly confirmed the attackers' identities.
+
+## 5. How Is Binance Handling the Losses?
+
+Binance announced that it would absorb the financial impact rather than pass the losses to customers.
+
+It committed to using its Secure Asset Fund for Users (SAFU) and corporate treasury.
+
+SAFU is an emergency reserve established by Binance in 2018 to provide additional protection for users.
+
+The company also announced additional security checks and an updated Proof of Reserves report.
+
+These developments raise an important distinction:
+
+**Recovering stolen funds and compensating customers are two different things.**
+
+Even if attackers retain some of the stolen cryptocurrency, Binance can compensate affected customers using its own reserves.
+
+However, independently verifiable financial disclosures remain important for establishing the strength of those assurances.
+
+Source: [Binance – Official Security Incident Update](https://www.binance.com/en/support/announcement/detail/d3306d9dca5243548c813b605e1d1751)
+
+## 6. Five Security Lessons From the Incident
+
+The Binance breach highlights several important cybersecurity principles.
+
+**1. Protect transaction authorization, not just private keys.** Even if private keys remain secure, compromised services authorized to request signatures can create serious risks.
+
+**2. Follow the principle of least privilege.** Employees and internal services should only have access to the systems necessary for their responsibilities.
+
+**3. Introduce transaction-level safeguards.** Large withdrawals should require additional authorization, independent verification and risk checks.
+
+**4. Monitor blockchain activity continuously.** Real-time monitoring can help exchanges detect suspicious transactions before attackers move funds further.
+
+**5. Secure internal infrastructure.** Employee laptops, cloud services, deployment pipelines and internal containers are all part of an exchange's security perimeter.
+
+## 7. The Bigger Picture
+
+Does this mean blockchain technology has failed?
+
+Not necessarily.
+
+Bitcoin and Ethereum are decentralized networks. Binance is a centralized company that provides trading, custody and withdrawal services on top of those networks.
+
+When users deposit cryptocurrency into Binance, they generally surrender direct control of the associated private keys. The exchange becomes responsible for protecting and managing those assets.
+
+The blockchain can continue functioning perfectly even when an exchange's internal infrastructure is compromised.
+
+Interestingly, blockchain transparency also helped investigators track the stolen funds and coordinate with stablecoin issuers to freeze approximately $3 billion.
+
+But transparency does not guarantee recovery, and decentralization does not eliminate operational risk.
+
+The Binance incident reinforces one fundamental principle of cryptocurrency security:
+
+**Protecting the private key is only half the job. Protecting every system that has the authority to use that key is equally important.**
+
+---
+
+### Sources
+
+1. [Reuters – How the Biggest Crypto Heist Unfolded](https://www.reuters.com/legal/government/gone-20-minutes-how-biggest-heist-crypto-history-unfolded-2026-10-30/)
+2. [TRM Labs – Binance $6.36 Billion Hack](https://www.trmlabs.com/resources/blog/north-korea-steals-usd-6-36-billion-from-binance-in-the-largest-hack-in-history)
+3. [Elliptic – Binance Security Incident Analysis](https://www.elliptic.co/insights/binance-largest-hack-in-history/)
+4. [Binance – Official Security Update](https://www.binance.com/en/support/announcement/detail/d3306d9dca5243548c813b605e1d1751)
+
+*Information reflects reports available as of 31 October 2026. The investigation remains ongoing, and estimates and attribution may change.*

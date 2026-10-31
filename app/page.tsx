@@ -11,7 +11,8 @@ function ArrowIcon() {
 }
 
 export default function Home() {
-  const [latest, ...recentPosts] = posts;
+  const [latest, ...restPosts] = posts;
+  const recentPosts = restPosts.slice(0, 3);
 
   return (
     <main>

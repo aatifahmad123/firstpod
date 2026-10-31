@@ -11,6 +11,30 @@ export type Post = {
 
 export const posts: Post[] = [
   {
+    slug: "the-6-3-billion-binance-heist-how-hackers-pulled-off-one-of-cryptos-biggest-thefts",
+    title: "The $6.3 billion Binance heist: How hackers pulled off one of crypto's biggest thefts",
+    excerpt:
+      "An inside look at the security breach, the technology exploited, where the stolen money went, and what it means for cryptocurrency security.",
+    date: "Oct 31, 2026",
+    readTime: "7 min read",
+    accent: "orange",
+    fontColor: "cream",
+    content: [
+      "On 29 October 2026, Binance, the world's largest cryptocurrency exchange, suffered a major security breach that resulted in approximately $6.36 billion in cryptocurrency being stolen. According to blockchain intelligence firm TRM Labs, the attackers moved funds across ten blockchain networks, with most of the theft occurring within approximately 20 minutes.",
+      "For perspective, the infamous Bybit hack in February 2025 involved approximately $1.5 billion. The Binance incident is more than four times larger. However, this wasn't a conventional scam involving fake websites or stolen customer passwords. It appears to have been a sophisticated attack on the infrastructure responsible for authorizing cryptocurrency transactions.",
+      "Cryptocurrency exchanges generally maintain two types of wallets: cold wallets kept offline or isolated from operational systems for long-term storage, and hot wallets connected to operational infrastructure used for everyday deposits and withdrawals. Hot wallets require private keys to authorize transactions, typically protected using specialized signing infrastructure.",
+      "Initial investigations suggested that attackers compromised a laptop belonging to a Binance DevOps engineer and subsequently gained access to internal infrastructure. Binance later indicated that the attack involved multiple breach points. The most important part of the attack was reportedly the compromise of systems responsible for transaction authorization.",
+      "Imagine a bank vault with an extremely secure lock. Instead of breaking the lock, an attacker compromises the control room that authorizes access to the vault. The attacker may never need to physically steal the key. A similar principle applies to cryptocurrency signing systems. If an attacker compromises a service authorized to request cryptographic signatures, they may be able to initiate unauthorized transactions without directly extracting the underlying private keys.",
+      "One particularly interesting technical detail identified by TRM Labs involved Ethereum's EIP-7702 functionality, which allows externally owned accounts to delegate certain functionality to smart-contract code. Investigators reported that attackers abused this mechanism to turn a Binance hot wallet into an attacker-controlled sweeper that automatically transfers funds from one wallet to another. The attackers reportedly prepared 50 pre-signed authorizations in advance, suggesting considerable planning before the actual theft.",
+      "Stealing cryptocurrency is only half the challenge. Converting it into usable money without getting caught is considerably harder. Blockchain transactions are publicly visible, allowing investigators to track stolen funds across wallets and networks. A significant portion of the stolen assets consisted of stablecoins such as USDT and USDC. Unlike Bitcoin and Ethereum, stablecoins issued by centralized companies have an important feature: their issuers can freeze tokens at specific addresses.",
+      "Following the incident, companies including Tether, Circle and Ripple cooperated with investigators to restrict affected assets. Approximately $3 billion worth of assets were reportedly frozen or immobilized. The attackers also attempted to convert stablecoins into ETH. One reported transaction involved converting approximately $325 million in stablecoins into around $285 million worth of ETH. This demonstrates an important distinction in cryptocurrency: the value of an asset and the ability to control that asset are not necessarily the same thing.",
+      "Blockchain intelligence firm TRM Labs attributed the incident to TraderTraitor, a hacking group associated with North Korea. Other investigations have also identified similarities with previous North Korean-linked cryptocurrency thefts. Their techniques have included compromising employee devices, social engineering, exploiting internal infrastructure, targeting transaction-signing systems, and moving stolen funds across multiple blockchain networks.",
+      "Binance announced that it would absorb the financial impact rather than pass the losses to customers. It committed to using its Secure Asset Fund for Users (SAFU) and corporate treasury. The company also announced additional security checks and an updated Proof of Reserves report. These developments raise an important distinction: recovering stolen funds and compensating customers are two different things.",
+      "The Binance breach highlights several important cybersecurity principles: protect transaction authorization, not just private keys; follow the principle of least privilege; introduce transaction-level safeguards for large withdrawals; monitor blockchain activity continuously; and secure internal infrastructure including employee laptops, cloud services, deployment pipelines and internal containers.",
+      "The Binance incident reinforces one fundamental principle of cryptocurrency security: protecting the private key is only half the job. Protecting every system that has the authority to use that key is equally important.",
+    ],
+  },
+  {
     slug: "recent-cybersecurity-threats-in-the-age-of-ai",
     title: "Recent cybersecurity threats in the age of AI",
     excerpt:
