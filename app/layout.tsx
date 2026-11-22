@@ -1,19 +1,12 @@
 import type { Metadata } from "next";
-import { Lora, Roboto } from "next/font/google";
+import { IBM_Plex_Sans } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 
-const roboto = Roboto({
-  subsets: ["latin"],
-  weight: ["400", "700"],
-  variable: "--font-roboto",
-  display: "swap",
-});
-
-const lora = Lora({
+const ibmPlexSans = IBM_Plex_Sans({
   subsets: ["latin"],
   weight: ["400", "500", "700"],
-  variable: "--font-lora",
+  variable: "--font-main",
   display: "swap",
 });
 
@@ -29,7 +22,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${roboto.variable} ${lora.variable}`}>
+      <body className={ibmPlexSans.variable}>
         {children}
         <Analytics />
       </body>
