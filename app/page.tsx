@@ -20,9 +20,7 @@ export default function Home() {
 
       <section className="intro" id="latest">
         <h1>
-          Beyond the
-          <br />
-          <em>surface.</em>
+          <span>Beyond the <em>surface.</em></span>
         </h1>
         <p className="intro-copy">
           Regular posts on software, AI, systems, and the ideas shaping the
@@ -76,7 +74,7 @@ export default function Home() {
       <Newsletter />
 
       <footer id="about">
-        <span>© 2026 FIRSTPOD</span>
+        <span>© 2026 Firstpod</span>
         <span>Made with intention</span>
         <a href="mailto:jammyjellyfish26@proton.me">jammyjellyfish26@proton.me</a>
       </footer>

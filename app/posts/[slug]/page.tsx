@@ -75,7 +75,7 @@ export default async function PostPage({
       <Newsletter />
 
       <footer id="about">
-        <span>© 2026 FIRSTPOD</span>
+        <span>© 2026 Firstpod</span>
         <span>Made with intention</span>
         <a href="mailto:jammyjellyfish26@proton.me">jammyjellyfish26@proton.me</a>
       </footer>

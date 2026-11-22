@@ -2,7 +2,7 @@
 
 A curated collection of insights on software, AI, systems, and the ideas shaping the world.
 
-![FIRSTPOD Homepage](assets/firstpod-home.png)
+![FIRSTPOD Homepage](assets/firstpod-home-1.png)
 
 ## About
 
