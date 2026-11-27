@@ -103,6 +103,15 @@ footer a { color: var(--orange); }
 .archive-heading { align-items: end; display: flex; justify-content: space-between; margin-bottom: 32px; }
 .archive-heading h1 { font-size: clamp(40px, 5vw, 64px); margin: 0; }
 .archive-heading p { color: var(--stone); font-size: 13px; line-height: 1.55; margin: 0 0 6px; max-width: 280px; }
+.archive-title-row { align-items: center; display: flex; gap: 16px; }
+.filter-toggle { background: none; border: 0; color: var(--ink); cursor: pointer; display: none; padding: 4px; transition: color .2s ease; }
+.filter-toggle:hover { color: var(--orange); }
+.filter-toggle svg { height: 24px; stroke-width: 2; width: 24px; }
+.filter-controls { align-items: center; display: flex; flex-wrap: wrap; gap: 12px; }
+.filter-label { color: var(--stone); font-size: 16px; letter-spacing: .04em; white-space: nowrap; }
+.year-filter, .month-filter { appearance: none; -webkit-appearance: none; -moz-appearance: none; background: var(--cream); border: 1.5px solid var(--taupe); border-radius: 4px; color: var(--ink); cursor: pointer; font-size: 14px; font-weight: 500; letter-spacing: .04em; min-width: 140px; outline: none; padding: 10px 36px 10px 16px; transition: all .2s ease; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23252422' d='M2 4l4 4 4-4z'/%3E%3C/svg%3E"); background-position: right 12px center; background-repeat: no-repeat; }
+.year-filter:hover, .month-filter:hover, .year-filter:focus, .month-filter:focus { border-color: var(--stone); }
+.no-results { color: var(--stone); font-size: 16px; grid-column: 1 / -1; padding: 40px 0; text-align: center; }
 .archive-grid { display: grid; gap: 16px; grid-template-columns: repeat(2, 1fr); }
 .archive-card { min-height: 300px; padding: 24px; }
 .archive-card.orange { background: var(--orange); }
@@ -148,6 +157,13 @@ footer a { color: var(--orange); }
   .post-page-recent { padding-top: 10px; }
   .archive-page { padding: 40px 20px 52px; }
   .archive-heading { align-items: flex-start; flex-direction: column; gap: 18px; margin-bottom: 28px; }
+  .archive-title-row { align-items: center; width: 100%; }
+  .filter-toggle { display: block; margin-left: 2px; padding: 0; transform: translateY(6px); }
+  .filter-toggle:hover { color: var(--ink); }
+  .filter-controls { display: none; width: 100%; }
+  .filter-controls.show-mobile { display: flex; }
+  .filter-label { width: 100%; }
+  .year-filter, .month-filter { flex: 1; min-width: 0; width: 100%; }
   .archive-grid { grid-template-columns: 1fr; }
   .archive-card { min-height: 280px; padding: 20px; }
 }

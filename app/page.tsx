@@ -11,8 +11,25 @@ function ArrowIcon() {
 }
 
 export default function Home() {
-  const [latest, ...restPosts] = posts;
-  const recentPosts = restPosts.slice(0, 3);
+  // Sort posts by date in descending order (most recent first)
+  const sortedPosts = [...posts].sort((a, b) => {
+    const dateA = new Date(a.date);
+    const dateB = new Date(b.date);
+    return dateB.getTime() - dateA.getTime();
+  });
+
+  // Most recent post is the featured post with orange bg and cream font
+  const latest = { ...sortedPosts[0], accent: "orange" as const, fontColor: "cream" as const };
+  
+  // Next 3 most recent posts with specific color patterns
+  const recentPosts = sortedPosts.slice(1, 4).map((post, index) => {
+    const colorPatterns = [
+      { accent: "taupe" as const, fontColor: "ink" as const },      // First post
+      { accent: "stone" as const, fontColor: "cream" as const },    // Second post
+      { accent: "ink" as const, fontColor: "cream" as const },      // Third post
+    ];
+    return { ...post, ...colorPatterns[index] };
+  });
 
   return (
     <main>
